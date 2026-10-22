@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Layanan - Portal Layanan Publik</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">SIPL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link active" href="layanan.html">Daftar Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-light text-primary ms-2 px-3" href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+        <li class="breadcrumb-item"><a href="layanan.html">Daftar Layanan</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Detail Layanan</li>
+      </ol>
+    </nav>
+
+    <!-- Tab Navigasi Pilihan Layanan -->
+    <ul class="nav nav-tabs my-4" id="layananTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active fw-bold" id="ktp-tab" data-bs-toggle="tab" data-bs-target="#ktp" type="button" role="tab">Pembuatan E-KTP</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link fw-bold" id="kk-tab" data-bs-toggle="tab" data-bs-target="#kk" type="button" role="tab">Pembaruan KK</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link fw-bold" id="umkm-tab" data-bs-toggle="tab" data-bs-target="#umkm" type="button" role="tab">Izin Usaha UMKM</button>
+      </li>
+    </ul>
+
+    <!-- Konten Detail Setiap Layanan -->
+    <div class="tab-content" id="layananTabContent">
+      
+      <!-- 1. Detail Pembuatan E-KTP -->
+      <div class="tab-pane fade show active" id="ktp" role="tabpanel">
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Detail Layanan: Pembuatan E-KTP</h2>
+            <img src="pembuatan E-KTP.jpg" class="img-fluid rounded my-3 shadow-sm" alt="Detail E-KTP">
+            <h4 class="mt-3">Syarat Dokumen</h4>
+            <ul>
+              <li>Minimal berusia 17 tahun atau sudah menikah.</li>
+              <li>Fotokopi Kartu Keluarga (KK) terbaru.</li>
+              <li>Surat Pengantar dari RT/RW setempat (untuk cetak perdana).</li>
+              <li>KTP rusak/lama (jika pengajuan karena rusak atau perpanjangan).</li>
+              <li>Surat Keterangan Kehilangan dari Kepolisian (jika KTP hilang).</li>
+            </ul>
+            <h4 class="mt-3">Alur Prosedur</h4>
+            <ol>
+              <li>Datang ke Kantor Disdukcapil atau Kecamatan setempat.</li>
+              <li>Mengambil nomor antrean layanan kependudukan.</li>
+              <li>Menyerahkan berkas persyaratan kepada petugas verifikasi.</li>
+              <li>Melakukan pengambilan foto diri, rekam sidik jari, dan pemindaian iris mata.</li>
+              <li>Menerima resi pengambilan untuk pencetakan fisik E-KTP.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Detail Pembaruan Kartu Keluarga (KK) -->
+      <div class="tab-pane fade" id="kk" role="tabpanel">
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Detail Layanan: Pembaruan Kartu Keluarga (KK)</h2>
+            <img src="pembuatan kk.jpg" class="img-fluid rounded my-3 shadow-sm" alt="Detail Kartu Keluarga">
+            <h4 class="mt-3">Syarat Dokumen</h4>
+            <ul>
+              <li>Kartu Keluarga (KK) asli yang lama.</li>
+              <li>Fotokopi Buku Nikah / Akta Perkawinan (jika ada penambahan anggota/perubahan status).</li>
+              <li>Surat Keterangan Lahir dari dokter/bidan (jika penambahan anggota keluarga baru).</li>
+              <li>Surat Keterangan Pindah (SKPWNI) jika berpindah domisili.</li>
+              <li>Fotokopi Ijazah/Dokumen pendukung (jika ada perbaikan nama/tanggal lahir/pendidikan).</li>
+            </ul>
+            <h4 class="mt-3">Alur Prosedur</h4>
+            <ol>
+              <li>Mengisi formulir permohonan pembaruan KK di Kantor Desa/Kelurahan atau Kantor Kecamatan.</li>
+              <li>Petugas melakukan verifikasi data dan kelengkapan berkas dokumen pendukung.</li>
+              <li>Berkas diproses dan diinput ke dalam Sistem Informasi Administrasi Kependudukan (SIAK).</li>
+              <li>Proses verifikasi oleh Disdukcapil setempat.</li>
+              <li>Pencetakan Kartu Keluarga baru dan pengambilan dokumen (dapat berupa fisik atau PDF bermeterai elektronik).</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Detail Izin Usaha UMKM -->
+      <div class="tab-pane fade" id="umkm" role="tabpanel">
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Detail Layanan: Izin Usaha UMKM (NIB - Nomor Induk Berusaha)</h2>
+            <img src="perizinan.jpg" class="img-fluid rounded my-3 shadow-sm" alt="Detail Izin Usaha UMKM">
+            <h4 class="mt-3">Syarat Dokumen</h4>
+            <ul>
+              <li>Nomor Induk Kependudukan (NIK) E-KTP pemilik usaha.</li>
+              <li>Nomor Pokok Wajib Pajak (NPWP) aktif.</li>
+              <li>Alamat email aktif dan nomor HP/WhatsApp aktif.</li>
+              <li>Data detail usaha (Nama Usaha, Alamat Usaha, Modal Usaha, dan Jumlah Tenaga Kerja).</li>
+              <li>Kode Klasifikasi Baku Lapangan Usaha Indonesia (KBLI) yang sesuai.</li>
+            </ul>
+            <h4 class="mt-3">Alur Prosedur</h4>
+            <ol>
+              <li>Pendaftaran akun secara online melalui portal Sistem Online Single Submission (OSS).</li>
+              <li>Mengisi data profil pelaku usaha dan alamat domisili usaha secara lengkap.</li>
+              <li>Memilih jenis dan bidang usaha (KBLI) sesuai dengan kegiatan bisnis yang dijalankan.</li>
+              <li>Melakukan validasi data kelayakan dan pernyataan mandiri.</li>
+              <li>Penerbitan Nomor Induk Berusaha (NIB) dan Izin Usaha Mikro Kecil secara otomatis yang dapat langsung diunduh/dicetak.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-4">
+      <a href="layanan.html" class="btn btn-secondary">&laquo; Kembali ke Daftar Layanan</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-1 fw-bold">Dibuat Oleh:</p>
+      <p class="mb-1">Nama: <strong>Dewi Andriany</strong> | NIM: <strong>H0725015</strong></p>
+      <p class="mb-2">Email: <a href="mailto:dewiandriany96@gmail.com" class="text-white text-decoration-underline">dewiandriany96@gmail.com</a></p>
+      <hr class="border-light opacity-25 my-2">
+      <p class="mb-0 small">&copy; 2026 Portal Informasi Layanan Publik. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
